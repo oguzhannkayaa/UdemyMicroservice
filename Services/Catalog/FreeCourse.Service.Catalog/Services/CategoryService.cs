@@ -14,6 +14,7 @@ namespace FreeCourse.Service.Catalog.Services
 
         private readonly IMapper _mapper;
 
+
         public CategoryService(IMapper mapper, IDatabaseSettings databaseSettings)
         {
             var client = new MongoClient(databaseSettings.ConnectionString);
